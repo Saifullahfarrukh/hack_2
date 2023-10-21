@@ -39,8 +39,17 @@ const earth_radius = 6371.0;
     scanf("%lf" &lat2);
 
     printf("longitude:");
-    
+
     scanf("%lf", &long2);
+
+    lat1 = degreesToRadians(lat1);
+
+    long1 = degreesToRadians(long1);
+
+    lat2 = degreesToRadians(lat2);
+    
+    long2 = degreesToRadians(long2);
+
 
 
 
