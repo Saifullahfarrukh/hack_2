@@ -47,8 +47,22 @@ const earth_radius = 6371.0;
     long1 = degreesToRadians(long1);
 
     lat2 = degreesToRadians(lat2);
-    
+
     long2 = degreesToRadians(long2);
+    
+// Calculate the distance using the Spherical Law of Cosines
+
+    double diff = long2 - long1;
+
+    double distance = acos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(diff)) * earth_radius;
+
+    printf("\nLocation Distance\n========================\n");
+
+    printf("Origin:      (%.6lf, %.6lf)\n", lat1, long1);
+
+    printf("Destination: (%.6lf, %.6lf)\n", lat2, long2);
+
+    printf("Air distance is %.6lf kms\n", distance);
 
 
 
