@@ -2,7 +2,7 @@
 
 #include <math.h>
 
-#define earth_radius 6371.0
+
 
 #define M_PI 3.14159265358979323846
 
@@ -19,7 +19,7 @@ int main() {
     double lat1 , long1 , lat2 , long2;
 // 
 
-const earth_radius = 6371.0;
+const float earth_radius = 6371.0;
 
 
   printf(" Enter the latitude and longtude of the origin (in degrees) :\n");
@@ -32,11 +32,11 @@ const earth_radius = 6371.0;
 
     scanf("%lf", &long1 );
 
-    printf("Enter the latitude and longitude of the distance ( in degress)");
+    printf("Enter the latitude and longitude of the distance ( in degress)\n\n");
 
     printf("latitude : ");
 
-    scanf("%lf" &lat2);
+    scanf("%lf" ,&lat2);
 
     printf("longitude:");
 
