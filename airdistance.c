@@ -22,12 +22,27 @@ int main() {
 const earth_radius = 6371.0;
 
 
-printf(" Enter the latitude and longtude of the origin (in degrees) :\n");
-    printf("latitude:");
+  printf(" Enter the latitude and longtude of the origin (in degrees) :\n");
+
+  printf("latitude:");
+
     scanf("%lf", &lat1);
+
     printf("longitude:");
 
+    scanf("%lf", &long1 );
+
+    printf("Enter the latitude and longitude of the distance ( in degress)");
+
+    printf("latitude : ");
+
+    scanf("%lf" &lat2);
+
+    printf("longitude:");
     
+    scanf("%lf", &long2);
+
+
 
 
 }
